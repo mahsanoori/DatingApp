@@ -83,7 +83,7 @@
       }
     },
     "typedef": [
-      true,
+      false,
       "call-signature"
     ],
     "typedef-whitespace": {
@@ -148,5 +148,6 @@
       "app",
       "kebab-case"
     ]
+
   }
 }

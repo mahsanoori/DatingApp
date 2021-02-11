@@ -1,0 +1,18 @@
+<div class="container mt-5">
+    <div *ngIf="!registerMode" style="text-align: center;">
+        <h1>دوستت رو پیدا کن!</h1>
+        <P class="lead">فقط کافیه عضو سایت بشی تا با چند کلیک رفیقت رو پیدا کنی ...</P>
+        <div class="text-center">
+            <button (click)="registerToggle()" class="btn btn-primary btn-lg mr-3">عضویت</button>
+            <button class="btn btn-info btn-lg">اطلاعات بیشتر</button>
+        </div>
+    </div>
+
+    <div *ngIf="registerMode" class="container">
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <app-register (cancelRegister)="cancelRegisterMode($event)"></app-register>
+            </div>
+        </div>
+    </div>
+</div>
