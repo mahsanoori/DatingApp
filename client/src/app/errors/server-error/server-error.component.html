@@ -1,0 +1,18 @@
+<h4>خطای داخلی سرور - دوباره تلاش کنید</h4>
+
+<ng-container *ngIf="error">
+<h5 class="text-danger">
+    خطا : {{error.message}}
+</h5>
+<p class="font-weight-bold">NOTE: If You are Seeing this then Angular is probably not to blame!</p>
+<p>عملیات بعدی چیست؟</p>
+<ol>
+    <li>ابزار developer کروم را باز منید.</li>
+    <li>تب network را باز کنید.</li>
+    <li>خطای ایجاد شده را بررسی نمایید.</li>
+    <li>درخواست URL را ارسال نمایید. از صحت آن اطمینان حاصل کنید.</li>
+    <li>درخواست را مجددا در postman تکرار نمایید. اگر رفع نشد خطا از طف انگلار نیست.</li>
+</ol>
+<p>خطای خود ا در ادامه بررسی نمایید.</p>
+<code class="mt-5" style="background-color: whitesmoke;">{{error.details}}</code>
+</ng-container>

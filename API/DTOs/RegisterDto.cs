@@ -8,6 +8,7 @@ namespace API.DTOs
         public string Username { get; set; }
 
         [Required(ErrorMessage="مقداری وارد نمایید.")]
+        [StringLength(8 , MinimumLength = 4 , ErrorMessage="حداقل 4 کاراکتر وارد نمایید")]
         public string Password { get; set; }
     }
 }
