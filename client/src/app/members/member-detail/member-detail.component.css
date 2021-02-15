@@ -1,0 +1,20 @@
+.img-thumbnail{
+    margin:25px;
+    width: 85%;
+    height: 85%;
+}
+
+.card-body{
+    padding: 0 25px;
+}
+
+.card-foote{
+    padding: 10px 15px;
+    border-top: none;
+}
+
+.card{
+    background-color: whitesmoke;
+    text-align: right;
+    direction: rtl;
+}
